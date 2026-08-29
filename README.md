@@ -1,4 +1,4 @@
-# Portfolio Website
+# my-portfolio
 
 A modern portfolio website built with **Next.js**, **Tailwind CSS**, and **Framer Motion**.
 
