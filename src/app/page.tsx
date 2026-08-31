@@ -1,32 +1,36 @@
-"use client";
+import React from "react";
+import { HeroSection } from "@/components/home/HeroSection";
+import { CategoryGrid } from "@/components/home/CategoryGrid";
+import { ShopByAgeSection } from "@/components/home/ShopByAgeSection";
+import { BestsellersSection } from "@/components/home/BestsellersSection";
+import { ShopByNeedSection } from "@/components/home/ShopByNeedSection";
+import { OrganicMontessoriSection } from "@/components/home/OrganicMontessoriSection";
+import { PromoBanner } from "@/components/home/PromoBanner";
+import { NewArrivalsSection } from "@/components/home/NewArrivalsSection";
+import { BabyGuidesBanner } from "@/components/home/BabyGuidesBanner";
+import { WhyLittlebloom } from "@/components/home/WhyLittlebloom";
+import { TestimonialsSection } from "@/components/home/TestimonialsSection";
+import { RecentlyViewedSection } from "@/components/home/RecentlyViewedSection";
+import { InstagramGrid } from "@/components/home/InstagramGrid";
+import { NewsletterSection } from "@/components/home/NewsletterSection";
 
-import { motion, AnimatePresence } from "framer-motion";
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="min-h-screen bg-dark">
-      <Navbar />
-      <AnimatePresence>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <Hero />
-          <About />
-          <Skills />
-          <Projects />
-          <Contact />
-          <Footer />
-        </motion.div>
-      </AnimatePresence>
-    </main>
+    <div className="space-y-0">
+      <HeroSection />
+      <CategoryGrid />
+      <ShopByAgeSection />
+      <BestsellersSection />
+      <ShopByNeedSection />
+      <OrganicMontessoriSection />
+      <PromoBanner />
+      <NewArrivalsSection />
+      <BabyGuidesBanner />
+      <WhyLittlebloom />
+      <TestimonialsSection />
+      <RecentlyViewedSection />
+      <InstagramGrid />
+      <NewsletterSection />
+    </div>
   );
 }
